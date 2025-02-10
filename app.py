@@ -149,5 +149,5 @@ with gr.Blocks(css=css) as demo:
         img2img_b.click(mirror, inputs=[image_output, scale_by, method, gfpgan, codeformer], outputs=image_i2i)
         
         
-demo.queue(default_concurrency_limit=24)
+demo.queue()
 demo.launch()
